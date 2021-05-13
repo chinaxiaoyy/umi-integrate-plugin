@@ -67,7 +67,7 @@ export default function (api, options) {
             initialValue: {},
           });
           props = activeRoute.component.getInitialProps
-            ? await activeRoute.component.getInitialProps({
+            ? activeRoute.component.getInitialProps({
               route: activeRoute,
               isServer: false,
               location,
